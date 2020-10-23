@@ -24,6 +24,15 @@
     from user
     where id = #{id,jdbcType=INTEGER}
   </select>
+
+  <select id="getRolesByUserId" resultType="com.ict.txms.model.Role">
+    select role.* from role, user_role where user_role.rid = role.id and user_role.userId = #{id}
+  </select>
+
+  <select id="loadUserByUsername" resultType="com.ict.txms.model.User">
+    select * from user where username = #{username};
+  </select>
+
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
     delete from user
     where id = #{id,jdbcType=INTEGER}

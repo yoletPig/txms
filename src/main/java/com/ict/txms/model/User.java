@@ -1,6 +1,14 @@
 package com.ict.txms.model;
 
-public class User {
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+
+public class User implements UserDetails {
     private Integer id;
 
     private String name;
@@ -21,9 +29,19 @@ public class User {
 
     private String password;
 
-    private Integer enabled;
+    private Boolean enabled;
+
+    public List<Role> getRoles() {
+        return roles;
+    }
+
+    public void setRoles(List<Role> roles) {
+        this.roles = roles;
+    }
 
     private String avatar;
+
+    private List<Role> roles;
 
     public Integer getId() {
         return id;
@@ -93,8 +111,32 @@ public class User {
         return username;
     }
 
+    public boolean isAccountNonExpired() {
+        return true;
+    }
+
+    public boolean isAccountNonLocked() {
+        return true;
+    }
+
+    public boolean isCredentialsNonExpired() {
+        return true;
+    }
+
+    public boolean isEnabled() {
+        return enabled;
+    }
+
     public void setUsername(String username) {
         this.username = username == null ? null : username.trim();
+    }
+
+    public Collection<? extends GrantedAuthority> getAuthorities() {
+        List<SimpleGrantedAuthority> authorities = new ArrayList<>(roles.size());
+        for (Role role : roles) {
+            authorities.add(new SimpleGrantedAuthority(role.getName()));
+        }
+        return authorities;
     }
 
     public String getPassword() {
@@ -105,11 +147,8 @@ public class User {
         this.password = password == null ? null : password.trim();
     }
 
-    public Integer getEnabled() {
-        return enabled;
-    }
 
-    public void setEnabled(Integer enabled) {
+    public void setEnabled(Boolean enabled) {
         this.enabled = enabled;
     }
 
@@ -119,5 +158,24 @@ public class User {
 
     public void setAvatar(String avatar) {
         this.avatar = avatar == null ? null : avatar.trim();
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", age=" + age +
+                ", sex=" + sex +
+                ", idcard='" + idcard + '\'' +
+                ", phone='" + phone + '\'' +
+                ", address='" + address + '\'' +
+                ", email='" + email + '\'' +
+                ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                ", enabled=" + enabled +
+                ", avatar='" + avatar + '\'' +
+                ", roles=" + roles +
+                '}';
     }
 }

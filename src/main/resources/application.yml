@@ -1,7 +1,7 @@
 spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
-    url: jdbc:mysql://47.113.90.32:3306/ict?useSSL=true&serverTimezone=GMT
+    url: jdbc:mysql://47.113.90.32:3306/ict?useSSL=false&serverTimezone=GMT
     username: root
     password: 293911
     driver-class-name: com.mysql.jdbc.Driver

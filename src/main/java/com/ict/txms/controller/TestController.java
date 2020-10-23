@@ -1,4 +1,4 @@
-package com.ict.txms.Controller;
+package com.ict.txms.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
