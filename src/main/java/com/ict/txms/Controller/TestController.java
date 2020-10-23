@@ -14,19 +14,4 @@ public class TestController {
     public String hello() {
         return "hello";
     }
-
-    @GetMapping("/hello21")
-    public String hello21() {
-        return "hello";
-    }
-
-    @GetMapping("/hello2")
-    public String hello2() {
-        return "hello2";
-    }
-
-    @GetMapping("/hello23")
-    public String hello23() {
-        return "hello2";
-    }
 }
