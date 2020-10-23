@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a2516741-9cbc-4f07-9ea1-7cedd22c5460" name="Default Changelist" comment="构建txms">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ict/txms/Controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ict/txms/Controller/TestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ict/txms/Controller/TestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ict/txms/Controller/TestController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ict/txms/TxmsApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ict/txms/TxmsApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ict/txms/TxmsApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ict/txms/TxmsApplicationTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/txms.iml" beforeDir="false" afterPath="$PROJECT_DIR$/txms.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,11 +34,6 @@
         <option name="mavenHome" value="E:/apache-maven-3.6.3" />
         <option name="userSettingsFile" value="E:\apache-maven-3.6.3\conf\settings.xml" />
       </MavenGeneralSettings>
-    </option>
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
     </option>
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
@@ -84,18 +73,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -176,6 +153,10 @@
     </state>
     <state width="1493" height="401" key="GridCell.Tab.1.right/-1920.0.1536.864/0.0.1536.864@-1920.0.1536.864" timestamp="1603440438739" />
     <state width="1877" height="551" key="GridCell.Tab.1.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1603436788148" />
+    <state x="595" y="280" key="MultipleFileMergeDialog" timestamp="1603442237502">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="595" y="280" key="MultipleFileMergeDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1603442237502" />
     <state x="-1551" y="136" key="SettingsEditor" timestamp="1603440350266">
       <screen x="-1920" y="0" width="1536" height="864" />
     </state>
@@ -194,5 +175,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="744" y="307" key="git4idea.merge.GitMergeDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1603437360991" />
+    <state x="757" y="365" key="git4idea.ui.GitUnstashDialog" timestamp="1603442237624">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="757" y="365" key="git4idea.ui.GitUnstashDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1603442237624" />
   </component>
 </project>
