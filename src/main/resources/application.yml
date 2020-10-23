@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://47.113.90.32:3306/ict?useSSL=true&serverTimezone=GMT
+    username: root
+    password: 293911
+    driver-class-name: com.mysql.jdbc.Driver
+server:
+  port: 8081
+logging:
+  level:
+    org:
+      yoleen:
+        vhr:
+          mapper: debug
